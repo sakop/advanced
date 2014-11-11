@@ -1,5 +1,9 @@
 package spring.chap2.hibernate;
 
+import java.lang.reflect.ParameterizedType;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.hibernate.Session;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -17,9 +21,17 @@ public class HibernateTest {
         newPerson.setName("dada");
         service.createPerson(newPerson);
         System.out.println(newPerson.getId());
-        Person p = service.getPersonById(5);
+        Person p = service.getPersonById(newPerson.getId());
         System.out.println(p);
-        service.deletePerson();
+        service.deletePerson(newPerson.getId());
+        
+        p = new Person();
+        p.setName("error");
+       // service.insertAndError(p);
         context.close();
+        
+        List<Person> persons = new ArrayList<Person>();
+        ParameterizedType type = (ParameterizedType) persons.getClass().getGenericSuperclass();
+        System.out.println(type.getActualTypeArguments()[0]);
     }
 }

@@ -5,12 +5,13 @@ import java.util.List;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import spring.chap2.entity.Person;
 
 @Service
-@Transactional
+@Transactional(propagation=Propagation.REQUIRED) 
 public class HibernatePersonService {
     @Autowired
     private Session session;
@@ -37,9 +38,15 @@ public class HibernatePersonService {
     }
 
 
-    public void deletePerson(){
-        Person p = getPersonById(13);
+    public void deletePerson(int id){
+        Person p = getPersonById(id);
         session.delete(p);
+    }
+    
+    
+    public void insertAndError(Person p){
+    	session.save(p);
+    	throw new IllegalArgumentException();
     }
 
 

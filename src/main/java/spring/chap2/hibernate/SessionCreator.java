@@ -23,7 +23,6 @@ public class SessionCreator {
             s = factory.openSession();
             local.set(s);
         }
-        System.out.println("HERE");
         return s;
     }
 
