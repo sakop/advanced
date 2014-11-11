@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	border: 2px solid red;
+	height: 100px;
+	padding: 5px;
+	margin: 10px;
+}
+
+#div2 {
+	position: relative;
+	top: 30px;
+	left: 10px
+}
+
+div div{
+    height:10px;
+}
+
+.absolute{
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+</style>
+</head>
+<body>
+
+	<div>Block1</div>
+	<div id="div2">
+		<span>Block2</span>
+		<div class="absolute">absolute is here</div>
+		<div>not absolute is here</div>
+		<div>not absolute is here</div>
+
+	</div>
+	<div>Block3</div>
+
+
+</body>
+</html>

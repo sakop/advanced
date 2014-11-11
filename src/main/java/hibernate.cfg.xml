@@ -22,6 +22,6 @@
             update
         </property>
         <property name="current_session_context_class">thread</property>
-        <mapping resource="hibernate/Movie.hbm.xml" />
+        <mapping class="spring.chap2.entity.Person" />
     </session-factory>
 </hibernate-configuration>

@@ -84,6 +84,13 @@
             <version>${spring-framework.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>4.0.2.RELEASE</version>
+        </dependency>
+
+
 
         <!-- Spring JDBC and MySQL Driver -->
         <dependency>
@@ -91,6 +98,13 @@
             <artifactId>spring-jdbc</artifactId>
             <version>${spring-framework.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -112,8 +126,16 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.2.3.Final</version>
+            <version>3.6.3.Final</version>
         </dependency>
+
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.4.GA</version>
+        </dependency>
+
+
 
         <dependency>
             <groupId>mysql</groupId>

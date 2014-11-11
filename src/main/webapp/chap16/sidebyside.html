@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+div {
+	border: 2px solid red;
+}
+
+#left {
+	float: left;
+	width: 40%;
+	margin: 20px 3%;
+}
+
+#right {
+	float: right;
+	width: 40%;
+	margin: 20px 1%;
+}
+
+.group:before {
+	content: "";
+}
+
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+</style>
+</head>
+<body>
+<div  class="group">
+	<div id="left">When floating an element, it is also
+		important to recognize that an element is removed from the normal flow
+		of a page, and that may change an element’s default display value. The
+		float property relies on an element having a display value of block,
+		and may alter an element’s default display value if it is not already
+		displayed as a block-level element.</div>
+
+
+	<div id="right">When floating an element, it is
+		also important to recognize that an element is removed from the normal
+		flow of a page, and that may change an element’s default display
+		value. The float property relies on an element having a display value
+		of block, and may alter an element’s default display value if it is
+		not already displayed as a block-level element.</div>
+
+</div>
+	<div>footer aaaaaaaaaaa aaaaaaaaaa aaaaaaaaaa
+		aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa</div>
+</body>
+</html>
