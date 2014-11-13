@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+.reply{
+	min-height: 150px;
+}
+
+.reply_author_info{
+	float:left;
+	height: inherit;
+	padding:5px;
+	padding-right:20px;
+}
+
+
+.reply_author_info_img{
+	display: block;
+	width:90px;
+	height:auto;
+}
+
+.reply_author_info_name{
+	font-size:20px;
+	color:rgba(0,0,0,.8);
+	font-weight: bold;
+	font-family: 'Handlee', cursive;
+	letter-spacing: .1em;
+}
+
+.reply_content{
+	float: left;
+    height: inherit;
+    padding-left:10px;
+    width:86%;
+}
+
+.reply_text{
+	text-align: left;
+	text-indent: 2em;
+	padding:5px;
+	font-size: large;
+	color:white;
+}
+
+#replyForm{
+	text-align: center;
+	margin-top:40px;
+	margin-left: 150px;
+}
+
+

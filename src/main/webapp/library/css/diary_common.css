@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+.article_container{
+	width:60%;
+    margin:0 auto;
+    line-height: 1.2em;
+    padding:10px;
+    margin-top: 20px;
+    position: relative;
+    left:50px;
+}
+
+.mainBlock article{
+	text-align:left;
+	text-indent:2em;
+	font-size: large;
+	color:white;
+}
+
+.meta_info{
+	padding:5px;
+	margin:5px;
+    font-size: medium;
+}
+
+.meta_info .operations{
+	float:left;
+	padding-left:5px;
+	color:orange;
+	text-shadow: 3px 3px 10px rgba(255,0,255,.8);
+}
+
+.meta_info .operations:hover{
+	cursor: pointer;
+}
+
+.meta_info .datetime{
+    float:right;
+    padding-right:5px;
+}
+
+
+.mainBlock {
+	height: auto;
+}
+
+.title{
+	margin-top: 0px;
+	padding-top:7px;
+}
+
+.person_info{
+	margin:0px;
+	position: relative;
+	right:20%;
+}
+
+img{
+	display: inline-block;
+	width: 30px;
+	height: auto;
+	position: relative;
+	top:5px;
+}
+
+.person_info h4.author_name{
+	margin:inherit;
+	font-family: sans-serif;
+	letter-spacing: .1em;
+	color:orange;
+	text-shadow: 3px 3px 10px rgba(255,0,255,.8);
+	display: inline-block;
+}
+
+footer {
+	padding:20px;
+}
+
+body{
+    height: auto;
+}
+
+.words{
+	min-height: 120px;
+}
